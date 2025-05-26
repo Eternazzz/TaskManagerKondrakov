@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0052cc;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+select:focus {
+  border-color: #0052cc;
+  box-shadow: 0 0 6px #0052cc;
+}
+
+button {
+  background-color: #0052cc;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #003d99;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: default;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 80%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0052cc;
+  box-shadow: 0 0 6px #0052cc;
+}
+
+.task-board {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.column {
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  min-height: 250px;
+}
+
+.wide-column {
+  width: 320px !important;
+  flex: none !important;
+}
+
+.column.drag-over {
+  background: #cce0ff;
+  box-shadow: 0 0 10px 2px #3399ff;
+}
+
+.column h3 {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: #004080;
+  border-bottom: 2px solid #0052cc;
+  padding-bottom: 6px;
+}
+
+.task {
+  background-color: white;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.05);
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  transition: box-shadow 0.2s ease;
+}
+
+.task:active {
+  cursor: grabbing;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.task button {
+  background-color: transparent;
+  color: #cc3300;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.task button:hover {
+  color: #ff0000;
+}
