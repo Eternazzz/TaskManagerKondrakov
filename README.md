@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/Eternazzz/TaskManagerKondrakov.git
-cd NextJs
+cd TaskManagerKondrakov
 ```
 
 ### 2. Установите зависимости
