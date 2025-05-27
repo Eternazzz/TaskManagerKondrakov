@@ -15,7 +15,7 @@ cd TaskManagerKondrakov
 npm install --legacy-peer-deps
 ```
 
-### 3. Запустите приложение в режиме разработки
+### 3. Запустите приложение
 
 ```bash
 npm start
