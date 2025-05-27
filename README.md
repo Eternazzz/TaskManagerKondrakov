@@ -3,7 +3,7 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/AnotherJelly/NextJs.git
+git clone https://github.com/Eternazzz/TaskManagerKondrakov.git
 cd NextJs
 ```
 
